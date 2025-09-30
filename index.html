@@ -5,40 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang Mẫu Đẹp</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Thêm font và icon -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
     <header class="header">
         <h1>Chào mừng đến với Trang Mẫu</h1>
-        <nav class="nav">
+        <nav class="nav" aria-label="Điều hướng chính">
             <a href="#">Trang chủ</a>
-            <a href="#">Giới thiệu</a>
-            <a href="#">Dịch vụ</a>
-            <a href="#">Liên hệ</a>
+            <a href="#about">Giới thiệu</a>
+            <a href="#services">Dịch vụ</a>
+            <a href="#contact">Liên hệ</a>
         </nav>
     </header>
     <main class="main-content">
         <section class="hero">
             <h2>Thiết kế hiện đại &amp; chuyên nghiệp</h2>
             <p>Đây là một ví dụ về giao diện HTML và CSS đẹp mắt, dễ tùy chỉnh.</p>
-            <a href="#" class="btn">Tìm hiểu thêm</a>
+            <a href="#" class="btn" aria-label="Tìm hiểu thêm về chúng tôi">Tìm hiểu thêm</a>
         </section>
-        <section class="features">
+        <section class="about" id="about">
+            <h2>Về chúng tôi</h2>
+            <p>Chúng tôi chuyên cung cấp các giải pháp thiết kế web hiện đại, tối ưu trải nghiệm người dùng và dễ dàng mở rộng.</p>
+        </section>
+        <section class="features" id="services">
             <div class="feature">
+                <i class="fa-solid fa-mobile-screen fa-2x" aria-hidden="true"></i>
                 <h3>Giao diện Responsive</h3>
                 <p>Hiển thị tốt trên mọi thiết bị.</p>
             </div>
             <div class="feature">
+                <i class="fa-solid fa-sliders fa-2x" aria-hidden="true"></i>
                 <h3>Dễ dàng tùy chỉnh</h3>
                 <p>Thay đổi màu sắc, bố cục dễ dàng.</p>
             </div>
             <div class="feature">
+                <i class="fa-solid fa-gem fa-2x" aria-hidden="true"></i>
                 <h3>Hiện đại &amp; Tối giản</h3>
                 <p>Thiết kế tinh tế, phù hợp nhiều mục đích.</p>
             </div>
         </section>
     </main>
-    <footer class="footer">
-
+    <footer class="footer" id="contact">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h4>Liên hệ</h4>
+                <p>Email: <a href="mailto:info@trangmau.com">info@trangmau.com</a></p>
+                <p>Điện thoại: <a href="tel:+84123456789">0123 456 789</a></p>
+            </div>
+            <div class="footer-social">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-copy">
+            &copy; 2024 Trang Mẫu Đẹp. All rights reserved.
+        </div>
     </footer>
 </body>
 </html>
